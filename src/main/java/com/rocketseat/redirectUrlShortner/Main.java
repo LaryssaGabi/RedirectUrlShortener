@@ -38,10 +38,12 @@ public class Main implements RequestHandler<Map<String, Object>, Map<String, Obj
         try (InputStream s3ObjectStream = s3Client.getObject(getObjectRequest)) {
             urlData = objectMapper.readValue(s3ObjectStream, UrlData.class);
         } catch (Exception e) {
-            throw new RuntimeException("Error fetching or deserializing data from S3: " + e.getMessage(), e);
+            throw new RuntimeException("Error deserializing URL data: " + e.getMessage(), e);
         }
 
         long currentTimeInSeconds = System.currentTimeMillis() / 1000;
+
+
         if (urlData.getExpirationTime() < currentTimeInSeconds) {
             response.put("statusCode", 410);
             response.put("body", "This URL has expired");
