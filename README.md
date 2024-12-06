@@ -11,6 +11,7 @@ Este projeto utiliza **AWS Lambda**, **Amazon S3** e **API Gateway** para constr
 2. **Primeira Função Lambda: "Hello World"**  
    - Criação de uma função simples para familiarização com a plataforma AWS Lambda.
 
+
 3. **Função `createShortUrlLambda`**  
    - Responsável por gerar URLs encurtadas de forma dinâmica.
    - Configuração do projeto para:
