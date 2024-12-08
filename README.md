@@ -22,7 +22,7 @@ Este projeto utiliza **AWS Lambda**, **Amazon S3** e **API Gateway** para constr
 
 4. **Integração com o Amazon S3**  
    - Exploração do papel do S3 na arquitetura serverless.
-   - Configuração de um bucket para armazenamento de dados das URLs encurtadas.
+   - Configuração de um bucket para armazenamento de dados das URLs encurtadas..
    - Integração da função `createShortUrlLambda` com o bucket.
 
 5. **Função `redirectUrlLambda`** - **Nova Funcionalidade! Seria desse projeto** 🆕  
