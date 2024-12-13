@@ -66,4 +66,4 @@ Este projeto utiliza **AWS Lambda**, **Amazon S3** e **API Gateway** para constr
 
 ---
 
-Com a adição da **função `redirectUrlLambda`**, o sistema agora é capaz de redirecionar os usuários de forma eficiente e segura, validando a data de expiração das URLs. Essa funcionalidade, combinada com
+Com a adição da **função `redirectUrlLambda`**, o sistema agora é capaz de redirecionar os usuários de forma eficiente e segura, validando a data de expiração das URLs. 
